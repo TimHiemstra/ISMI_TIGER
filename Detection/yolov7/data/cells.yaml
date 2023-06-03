@@ -1,0 +1,9 @@
+# COCO 2017 dataset http://cocodataset.org
+
+train: C:\Users\timhi\Documents\school\ISMI\Project\note\yolov7\cell_dataset\images\train
+val: C:\Users\timhi\Documents\school\ISMI\Project\note\yolov7\cell_dataset\images\val
+test: C:\Users\timhi\Documents\school\ISMI\Project\note\yolov7\cell_dataset\images\test
+ 
+# Classes
+nc: 1  # number of classes
+names: ['lym']  # class names
