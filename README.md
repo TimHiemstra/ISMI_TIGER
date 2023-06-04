@@ -15,7 +15,7 @@ This folder contains the files necessary to create the docker image that was sub
 
 1. **./Docker/libs** contains the yolov7 github as well as the trained model weights.
 
-2. **./Docker/test_input** contains a test mask and image file to test out the algorithm within the docker environment by running the **./Docker/test.sh** script.
+2. **./Docker/test_input** A test .tif image should be placed in this directory and the associated mask should be placed in **./Docker/test_input/images** to test out the algorithm within the docker environment by running the **./Docker/test.sh** script.
 
 3. **./Docker/tigeralgorithmexample** contains the 5 python files that are used to run the docker algorithm. Specifically the **./Docker/processing.py** file contains the relevant code to load the trained yolov7 model and perform detection (no segmentation or TIL score computation.
 
@@ -32,8 +32,9 @@ To test the algorithm and go through our steps do the following:
 
 ## Testing the model
 
-0. Be in a linux environment and have docker installed
-1. Run the **./Docker/test.sh** script to test out the model. 
+0. Be in a linux environment and have docker installed.
+1. Add a .tif image and mask in the **./Docker/test_input** folder.
+2. Run the **./Docker/test.sh** script to test out the model. 
 
 
  
